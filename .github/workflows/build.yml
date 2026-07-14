@@ -25,7 +25,7 @@ jobs:
 
     - name: Build EXE
       run: |
-        pyinstaller -F last week.py
+        pyinstaller --onefile "last week.py"
 
     - name: Upload EXE
       uses: actions/upload-artifact@v4
